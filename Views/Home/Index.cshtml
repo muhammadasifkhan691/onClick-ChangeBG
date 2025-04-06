@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <p>Click on any button to change the Background color.</p>
+
+    @* <button class="btnBlu" onclick="changeBackground('blue')">Blue</button> *@
+    @* <button class="btnGren" onclick="changeBackground('green')">Green</button> *@
+    @* <button class="btnRed" onclick="changeBackground('red')">Red</button> *@
+    @* <button class="btnYelow" onclick="changeBackground('yellow')">Yellow</button> *@
+
+    <form method="post" asp-action="check">
+        <button class="btnRed" type="submit" name="bttn" value="red">Red</button>
+        <button class="btnBlu" type="submit" name="bttn" value="blue">Blue</button>
+        <button class="btnGren" type="submit" name="bttn" value="green">Green</button>
+        <button class="btnYelow" type="submit" name="bttn" value="yellow">Yellow</button>
+        <button class="btnOrng" type="submit" name="bttn" value="orange">Orange</button>
+        <button class="btnPrple" type="submit" name="bttn" value=" purple">Purple</button>
+
+    </form>
+</div>
